@@ -1,0 +1,29 @@
+.footer {
+  background: #222;
+}
+.link-to {
+  font-size: 28rpx;
+  color: white;
+  padding: 0 24rpx;
+}
+.link-to>view {
+  line-height: 120rpx;
+  border-bottom: solid 2rpx #333;
+}
+.link-to>view:nth-last-child(1) {
+  border-bottom:none;
+}
+.copyright {
+  display: flex;
+  font-size: 28rpx;
+  padding: 0 24rpx;
+  background: #111;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  height: 120rpx;
+}
+.copyright image {
+  width: 100rpx;
+  height: 72rpx;
+}

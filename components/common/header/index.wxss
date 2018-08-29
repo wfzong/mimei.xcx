@@ -1,0 +1,33 @@
+/* components/common/header/index.wxss */
+.header {
+  height: 120rpx;
+  /* background: #CCC; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eaeaea;
+  box-shadow: 0 2px 5px 0 hsla(0,0%,40%,.06);
+}
+.header .logo {
+  width: 100rpx;
+  height: 72rpx;
+  margin-left: 28rpx;
+}
+.header .trigger {
+  width: 120rpx;
+  height: 120rpx;
+  /* border-left: 1px solid #eaeaea; */
+  border-left:2rpx solid;
+  border-image: linear-gradient( transparent, #eaeaea) 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .trigger .icon {
+  width: 40rpx;
+  height: 40rpx;
+  background: url(http://static.fuzong.wang/FrsP2dYt8-mfDW-5JFpwxUUD5wqT) 0 0 no-repeat;
+  background-size: 40px;
+  color: transparent;
+}

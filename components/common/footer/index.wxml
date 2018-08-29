@@ -1,0 +1,11 @@
+<view class='footer'>
+  <view class='link-to'>
+    <view>隐私策略</view>
+    <view>使用条款</view>
+    <view>联系我们</view>
+  </view>
+  <view class='copyright'>
+    <text>© 流水清清 2018</text>
+    <image src='http://static.fuzong.wang/FoQ3g7F4oseaANPLj2zHkNzpMqAi'></image>
+  </view>
+</view>
