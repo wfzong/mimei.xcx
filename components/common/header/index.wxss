@@ -31,3 +31,6 @@
   background-size: 40px;
   color: transparent;
 }
+.header .trigger .icon.close {
+  background-position: -20px 0;
+}

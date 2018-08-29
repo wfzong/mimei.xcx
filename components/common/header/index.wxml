@@ -1,6 +1,6 @@
 <view class='header'>
   <image class='logo' src='http://www.mimei.net.cn/img/logo.61e7b9ce524391dd238ec0a3db6e8758.png'></image>
-  <view class='trigger'>
-    <view class='icon'>trigger</view>
+  <view class='trigger' bind:tap='menuTrigger'>
+    <view class='icon {{close?"close":""}}'>trigger</view>
   </view>
 </view>
