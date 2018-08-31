@@ -3,7 +3,7 @@
 
 <image-and-article-list list="{{recList}}" big-view="{{true}}">
   <text slot="title">推荐图集</text>
-  <view slot="more" class='more'>
+  <view slot="more" class='more' bindtap='getMorePhotos'>
     <text>查看更多图集</text>
   </view>
 </image-and-article-list>

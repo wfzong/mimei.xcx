@@ -108,6 +108,11 @@ Page({
     })
 
   },
+  getMorePhotos:function(){
+    wx.navigateTo({
+      url: '/pages/list/index?type=photos',
+    })
+  },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
