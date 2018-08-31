@@ -1,1 +1,11 @@
-/* pages/index/index.wxss */
+.more {
+  text-align: center;
+}
+.more text {
+  color: #c00000;
+  border: 1px solid #c00000;
+  font-size: 12px;
+  padding: 10px 15px;
+  margin: 20px auto;
+  display: inline-block;
+}

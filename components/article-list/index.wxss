@@ -1,0 +1,50 @@
+/* components/article-list/index.wxss */
+.list {
+  font-size: 28rpx;
+  padding: 0 32rpx;
+}
+
+.list .title {
+  text-align: center;
+  font-size: 60rpx;
+  line-height: 2.2em;
+  position: relative;
+}
+
+.list .title text {
+  background: #FFF;
+  padding: 0 0.8em;
+}
+
+.list .title::before {
+  content: '';
+  height: 2rpx;
+  display: block;
+  background: repeating-linear-gradient(90deg, white, white 6rpx, black 0, black 8rpx);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+.list .item  {
+  border-bottom: solid 2rpx #eaeaea;
+  margin-bottom: 18rpx;
+}
+.list .item:nth-last-child(1) {
+  border-bottom: none;
+}
+.list .item view:nth-child(1){
+  font-size: 46rpx;
+}
+.list .item view:nth-child(2){
+  font-size: 28rpx;
+  color: #666;
+  padding: .4em 0;
+}
+.list .item view:nth-child(3){
+  font-size: 24rpx;
+  color: #666;
+  font-style: italic;
+  padding-bottom: .6em;
+}

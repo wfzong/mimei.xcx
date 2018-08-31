@@ -1,6 +1,9 @@
 // http://static.fuzong.wang/FoQ3g7F4oseaANPLj2zHkNzpMqAi logo
 // http://static.fuzong.wang/FrsP2dYt8-mfDW-5JFpwxUUD5wqT icon
+var behaviorLinkTo = require('../../../utils/behavior-link-to')
+
 Component({
+  behaviors: [behaviorLinkTo],
   /**
    * 组件的属性列表
    */
@@ -24,6 +27,5 @@ Component({
         close: !this.data.close
       })
     }
-
   }
 })

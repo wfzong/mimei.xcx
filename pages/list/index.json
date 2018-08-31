@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "mimei-footer": "/components/common/footer/index",
+    "mimei-header": "/components/common/header/index",
+    "image-and-article-list": "/components/image-and-article-list/index"
+  }
+}

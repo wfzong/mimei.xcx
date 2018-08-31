@@ -1,30 +1,23 @@
 <!--pages/index/index.wxml-->
 <mimei-header></mimei-header>
-<view>index</view>
-<view>index</view>
-<view>index</view>
-<view>index</view>
-<view>index</view>
-<view>index</view>
-<view>index</view>
-<view>index</view>
-<view>index</view>
-<view>index</view>
-<view>index</view>
-<view>index</view>
-<view>index</view>
-<view>index</view>
-<view>index</view>
-<view>index</view>
-<view>index</view>
-<view>index</view>
-<view>index</view>
-<view>index</view>
-<view>index</view>
-<view>index</view>
-<view>index</view>
-<view>index</view>
-<view>index</view>
-<view>index</view>
-<view>index</view>
+
+<image-and-article-list list="{{recList}}" big-view="{{true}}">
+  <text slot="title">推荐图集</text>
+  <view slot="more" class='more'>
+    <text>查看更多图集</text>
+  </view>
+</image-and-article-list>
+
+<article-list list="{{recArticleList}}">
+  <text slot="title">文章推荐</text>
+</article-list>
+
+<article-list-more list="{{newArticles}}">
+  新闻文章
+</article-list-more>
+
+<article-list-more list="{{newPhotos}}">
+  新闻图片
+</article-list-more>
+
 <mimei-footer></mimei-footer>

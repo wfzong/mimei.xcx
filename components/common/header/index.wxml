@@ -1,6 +1,13 @@
 <view class='header'>
-  <image class='logo' src='http://www.mimei.net.cn/img/logo.61e7b9ce524391dd238ec0a3db6e8758.png'></image>
+  <image data-to="/pages/index/index" data-navtype="reLaunch" bind:tap="linkTo" class='logo' src='http://www.mimei.net.cn/img/logo.61e7b9ce524391dd238ec0a3db6e8758.png'></image>
   <view class='trigger' bind:tap='menuTrigger'>
     <view class='icon {{close?"close":""}}'>trigger</view>
   </view>
+</view>
+<view class='cover {{close?"":"fn-hidden"}}'>
+  <view data-to="/pages/list/index?type=normal" data-navtype="redirectTo" bind:tap="linkTo">最新文章</view>
+  <view data-to="/pages/list/index?type=photos" data-navtype="redirectTo" bind:tap="linkTo">新最图集</view>
+  <view data-to="/pages/list/index?categories=4" data-navtype="redirectTo" bind:tap="linkTo">写真</view>
+  <view>关于我们</view>
+  <view>联系我们</view>
 </view>

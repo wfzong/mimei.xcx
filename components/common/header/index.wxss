@@ -14,15 +14,13 @@
   margin-left: 28rpx;
 }
 .header .trigger {
-  width: 120rpx;
-  height: 120rpx;
-  /* border-left: 1px solid #eaeaea; */
-  border-left:2rpx solid;
-  border-image: linear-gradient( transparent, #eaeaea) 1;
-
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 120rpx;
+  height: 120rpx;
+  border-left:2rpx solid;
+  border-image: linear-gradient( transparent, #eaeaea) 1;
 }
 .header .trigger .icon {
   width: 40rpx;
@@ -33,4 +31,30 @@
 }
 .header .trigger .icon.close {
   background-position: -20px 0;
+}
+.cover {
+  position: absolute;
+  z-index: 100;
+  top: 122rpx;
+  left: 0;
+  /* background: rgba(0, 0, 0, .3); */
+  background: white;
+  width: 100%;
+  /* height: calc(100% - 120rpx); */
+  font-size: 28rpx;
+  padding: 0 40rpx;
+  box-sizing: border-box;  
+  box-shadow: 0 2px 5px 0 hsla(0,0%,40%,.06);
+}
+.cover view {
+  line-height: 120rpx;
+  border-bottom: solid 2rpx #eaeaea;
+  padding-left: 12rpx;
+}
+.cover view:nth-last-child(1) {
+  border-bottom: none;
+}
+
+.fn-hidden {
+  display: none;
 }

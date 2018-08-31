@@ -1,0 +1,6 @@
+page {
+  /* position: fixed; */
+}
+.fn-hidden {
+  display: none;
+}

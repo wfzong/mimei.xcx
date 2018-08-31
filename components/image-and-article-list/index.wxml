@@ -1,0 +1,17 @@
+<view class='list {{bigView?"big-view":""}}'>
+  <view class='title'>
+    <slot name="title"></slot>
+  </view>
+  <view class='element' wx:for="{{list}}" wx:key="{{item.id}}">
+    <image wx:if='{{item.artType==="photos"}}' mode='widthFix' src='{{config.baseStaticUrl}}{{item.imgShow.imgHash}}?imageView2/1/w/500/h/500'></image>
+    <view class='info'>
+      <view>{{item.title}}</view>
+      <view>
+        <text>by</text> {{item.user.nickname}}</view>
+      <view>
+        <text wx:for="{{item.categories}}" wx:key="{{item.id}}">{{item.title}}</text>{{item.update_time}}
+      </view>
+    </view>
+  </view>
+  <slot name="more"></slot>
+</view>
