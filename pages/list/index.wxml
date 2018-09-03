@@ -3,7 +3,7 @@
 <mimei-header></mimei-header>
 
 <image-and-article-list list="{{list}}" >
-  <text slot="title">推荐图集</text>
+  <text slot="title">{{title}}</text>
 </image-and-article-list>
 
 <mimei-footer></mimei-footer>

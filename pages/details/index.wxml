@@ -1,2 +1,14 @@
 <!--pages/details/index.wxml-->
-<text>pages/details/index.wxml</text>
+<import src="/utils/wxParse/wxParse.wxml" />
+
+<mimei-header></mimei-header>
+<view class='article-content'>
+  <!-- <template wx:if="{{details && details.content}}" is="wxParse" data="{{wxParseData:article.nodes}}" /> -->
+
+
+<rich-text nodes="{{details.content}}" bindtap="tap"></rich-text>
+
+</view>
+
+
+<mimei-footer></mimei-footer>

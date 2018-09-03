@@ -1,6 +1,9 @@
 // components/image-and-article-list/index.js
+
+const behaviorLinkTo = require('../../utils/behavior-link-to')
 const config = require('../../utils/config.js')
 Component({
+  behaviors: [behaviorLinkTo],
   options: {
     multipleSlots: true
   },

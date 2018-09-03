@@ -1,1 +1,7 @@
 /* pages/details/index.wxss */
+.article-content {
+  padding: 0 32rpx;
+}
+.article-content img {
+  max-width: 100%;
+}

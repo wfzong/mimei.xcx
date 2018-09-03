@@ -7,6 +7,7 @@ Page({
    */
   data: {
     list: [],
+    title: '推荐图集及文章',
     config
   },
 
@@ -40,16 +41,21 @@ Page({
     }
     wx.request({ // 推荐图片
       url: requestUri,
-      success: function (res) {
+      success: function(res) {
         if (res.statusCode === 200) {
           list = res.data.list
-          list.map(function (item) {
+          list.map(function(item) {
             item.imgShow = JSON.parse(item.imgShow)
           })
           that.setData({
             list
           })
           wx.setStorageSync(listKey, list) // 覆盖缓存数据
+          if (res.data.categoryInfo && res.data.categoryInfo.title) {
+            that.setData({
+              title: res.data.categoryInfo.title
+            })
+          }
         }
       }
     })

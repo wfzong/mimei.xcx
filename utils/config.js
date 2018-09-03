@@ -25,6 +25,12 @@ module.exports = {
         key:'list-main',
         uri: 'v1/article/'
       }
+    },
+    details: {
+      content: {
+        key: 'content-details',
+        uri: 'v1/article/'
+      }
     }
   }
 }
