@@ -8,6 +8,6 @@
   <view data-to="/pages/list/index?type=normal" data-navtype="redirectTo" bind:tap="linkTo">最新文章</view>
   <view data-to="/pages/list/index?type=photos" data-navtype="redirectTo" bind:tap="linkTo">新最图集</view>
   <view data-to="/pages/list/index?categories=4" data-navtype="redirectTo" bind:tap="linkTo">写真</view>
-  <view>关于我们</view>
-  <view>联系我们</view>
+  <view data-to="/pages/materials/index?type=privacy" bind:tap="linkTo">隐私策略</view>
+  <view data-to="/pages/materials/index?type=contact" bind:tap="linkTo">联系我们</view>
 </view>
