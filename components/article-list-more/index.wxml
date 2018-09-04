@@ -2,5 +2,5 @@
   <view class='title'>
     <slot></slot>
   </view>
-  <view class='item' wx:for="{{list}}" wx:key="{{item.id}}">{{item.title}}</view>
+  <view data-to="/pages/details/index?id={{item.id}}" bind:tap="linkTo" class='item' wx:for="{{list}}" wx:key="{{item.id}}">{{item.title}}</view>
 </view>

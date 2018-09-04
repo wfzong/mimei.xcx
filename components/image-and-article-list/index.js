@@ -22,6 +22,10 @@ Component({
     more: {
       type: String,
       value: ''
+    },
+    openMethod: {
+      type: String,
+      value: 'navigateTo'
     }
   },
 

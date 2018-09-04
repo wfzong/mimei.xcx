@@ -1,7 +1,54 @@
 /* pages/details/index.wxss */
+
 .article-content {
-  padding: 0 32rpx;
+  padding: 32rpx;
 }
-.article-content img {
-  max-width: 100%;
+
+.article-content .title {
+  font-size: 50rpx;
+  padding: 0.6em 0;
+}
+
+.article-content .description {
+  font-size: 28rpx;
+  color: #666;
+  padding: 0.8em 0;
+  border-bottom: dashed 1px #ccc;
+}
+
+.article-content .info {
+  font-size: 28rpx;
+  color: #666;
+  padding: 0.4em 0;
+}
+
+.article-content .info text {
+  font-style: italic;
+  padding-right: 0.6em;
+}
+
+.article-content .img-content view {
+  border: solid 16rpx #efefef;
+  margin: 1em 0;
+}
+
+.article-content .img-content image {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.article-content .img-content text {
+  font-size: 28rpx;
+  display: block;
+  padding: 0.8em 0.5em;
+}
+
+.article-content .keys {
+  font-size: 28rpx;
+}
+
+.article-content .keys text {
+  color: #c00000;
+  font-weight: bold;
+  padding-right: 0.5em;
 }

@@ -1,14 +1,22 @@
 <!--pages/details/index.wxml-->
-<import src="/utils/wxParse/wxParse.wxml" />
-
 <mimei-header></mimei-header>
+
 <view class='article-content'>
-  <!-- <template wx:if="{{details && details.content}}" is="wxParse" data="{{wxParseData:article.nodes}}" /> -->
-
-
-<rich-text nodes="{{details.content}}" bindtap="tap"></rich-text>
-
+  <view class='keys'>
+    <text wx:for="{{details.categories}}" wx:key="{{item.key}}" data-id="{{item.id}}" bindtap='goNext'>{{item.title}}</text>
+  </view>
+  <view class='title'>{{details.title}}</view>
+  <view class='description'>{{details.description}}</view>
+  <view class='info'>
+    <text>by</text>{{details.user.nickname}} - {{details.update_time}}
+  </view>
+  <view class='img-content'>
+    <view wx:for="{{details.imgContent}}" wx:key="{{item.id}}">
+      <image src='{{config.baseStaticUrl}}{{item.imgHash}}?imageView2/0/w/1200' mode='widthFix'></image>
+      <text wx:if="{{item.title !== ''}}">{{item.title}}</text>
+    </view>
+  </view>
+  <rich-text nodes="{{details.content}}" bindtap="tap"></rich-text>
 </view>
-
 
 <mimei-footer></mimei-footer>

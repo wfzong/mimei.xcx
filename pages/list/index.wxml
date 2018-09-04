@@ -2,7 +2,7 @@
 <!--pages/index/index.wxml-->
 <mimei-header></mimei-header>
 
-<image-and-article-list list="{{list}}" >
+<image-and-article-list list="{{list}}" openMethod="redirectTo" >
   <text slot="title">{{title}}</text>
 </image-and-article-list>
 

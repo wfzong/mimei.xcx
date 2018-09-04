@@ -9,7 +9,12 @@
       <view>
         <text>by</text> {{item.user.nickname}}</view>
       <view>
-        <text wx:for="{{item.categories}}" wx:key="{{item.id}}" data-to="/pages/list/index?categories={{item.id}}" bind:tap="linkTo">{{item.title}}</text>{{item.update_time}}
+        <text 
+        wx:for="{{item.categories}}" 
+        wx:key="{{item.id}}" 
+        data-to="/pages/list/index?categories={{item.id}}" 
+        data-navtype="{{openMethod}}"
+        bind:tap="linkTo">{{item.title}}</text>{{item.update_time}}
       </view>
     </view>
   </view>

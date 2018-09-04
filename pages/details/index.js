@@ -1,23 +1,30 @@
 // pages/details/index.js
-// var WxParse = require('../../utils/wxParse/wxParse.js');
 const config = require('../../utils/config.js')
+const funs = require('../../utils/functions.js')
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    article: null,
     details: null,
     html: null,
-    article: null
+    config
+  },
+  goNext: function(e) {
+    console.log(e)
+    wx.navigateTo({
+      url: '/pages/list/index?categories=' + e.target.dataset.id,
+    })
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-
     console.log('options ', options)
+    console.log(funs)
     const that = this
 
 
@@ -27,11 +34,8 @@ Page({
     let details = wx.getStorageSync(key)
     if (details) {
       this.setData({
-        details,
-        html: details.content
+        details
       })
-      // WxParse.wxParse('article', 'html', details.content, that, 5);
-      // console.log('that.html ', details.content)
     }
 
     wx.request({
@@ -42,21 +46,15 @@ Page({
           let detailsData = res.data
           detailsData.imgContent = JSON.parse(detailsData.imgContent)
           detailsData.imgShow = JSON.parse(detailsData.imgShow)
+          detailsData.content = funs.parseHtml(detailsData.content)
 
-          // console.log('detailsData ', detailsData)
-          detailsData.content = detailsData.content.replace(/\<img/g, '<img style="max-width:100%;height:auto;"')
           wx.setStorageSync(key, detailsData)
           that.setData({
             details: detailsData
           })
-          console.log('detailsData.content ', detailsData.content.replace(/\<img/, '<img style="max-width:100%;height:auto;"'))
-          // WxParse.wxParse('article', 'html', details.content, that, 5);
         }
       }
     })
-
-
-
   },
 
   /**

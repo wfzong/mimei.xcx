@@ -1,0 +1,26 @@
+/* pages/materials/index.wxss */
+.materials {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+.materials .but {
+  margin-top: 1em;
+  font-size: 1.6em;
+}
+.materials .title {
+  font-size: 32rpx;
+}
+.materials .content {
+  font-size: 28rpx;
+}

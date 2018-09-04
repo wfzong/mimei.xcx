@@ -1,0 +1,23 @@
+<!--pages/materials/index.wxml-->
+<view class='materials'>
+  <view wx:if="{{type==='privacy'}}">
+    <view class='title'>隐私策略</view>
+    <view class='content'>
+      目前没有隐私策略，所有内容匀可以自由使用
+    </view>
+  </view>
+  <view wx:if="{{type==='copyright'}}">
+    <view class='title'>使用条款</view>
+    <view class='content'>
+      部分内容来源于网上，如有版本问题，请联系删除
+    </view>
+  </view>
+  <view wx:if="{{type==='contact'}}">
+    <view class='title'>联系我们</view>
+    <view class='content'>
+      <view>微信：icewfz</view>
+      <view>手机：13260106117</view>
+    </view>
+  </view>
+  <view bindtap='back' class='but'>返回</view>
+</view>

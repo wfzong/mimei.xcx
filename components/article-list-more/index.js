@@ -1,5 +1,7 @@
 // components/article-list-more/index.js
+const behaviorLinkTo = require('../../utils/behavior-link-to')
 Component({
+  behaviors: [behaviorLinkTo],
   /**
    * 组件的属性列表
    */
