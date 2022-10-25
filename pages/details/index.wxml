@@ -11,7 +11,7 @@
     <text>by</text>{{details.user.nickname}} - {{details.update_time}}
   </view>
   <view class='img-content'>
-    <view wx:for="{{details.imgContent}}" wx:key="{{item.id}}">
+    <view wx:for="{{details.imgContent}}" wx:key="id">
       <image src='{{config.baseStaticUrl}}{{item.imgHash}}?imageView2/0/w/1200' mode='widthFix'></image>
       <text wx:if="{{item.title !== ''}}">{{item.title}}</text>
     </view>

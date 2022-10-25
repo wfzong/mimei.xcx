@@ -76,7 +76,7 @@
 .big-view>view.element:nth-child(2)>.info {
   width: 100%;
 }
-.big-view .element>image {
+.big-view .element image {
   width: 300rpx;
   height: 300rpx;
   margin-right: 30rpx;

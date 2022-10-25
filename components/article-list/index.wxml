@@ -3,7 +3,7 @@
   <view class='title'>
     <slot name="title"></slot>
   </view>
-  <view class='item' wx:for="{{list}}" wx:key="{{item.id}}">
+  <view class='item' wx:for="{{list}}" wx:key="id">
     <view data-to="/pages/details/index?id={{item.id}}" bind:tap="linkTo">{{item.title}}</view>
     <view>{{item.description}}</view>
     <view>{{item.update_time}} by {{item.user.nickname}}</view>
