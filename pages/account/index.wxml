@@ -1,0 +1,10 @@
+<!--pages/account/index.wxml-->
+<text>pages/account/index.wxml</text>
+<open-data type="userAvatarUrl"></open-data>
+<open-data type="userNickName"></open-data>
+<button capture-bind:tap="loginEventHandler">登录</button>
+<button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">getPhoneNumber</button>
+
+<!-- 需要使用 button 来授权登录 -->
+<button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+<view wx:else>请升级微信版本</view>
