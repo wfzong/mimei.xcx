@@ -12,27 +12,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    let _this = this
-    // 查看是否授权
-    wx.getSetting({
-      success(res) {
-        if (res.authSetting['scope.userInfo']) {
-          // 已经授权，可以直接调用 getUserInfo 获取头像昵称
-          wx.getUserInfo({
-            success: function (res) {
-              console.log('res.userInfo', res.userInfo)
-            }
-          })
-        }
-      },
-      fail(err) {
-        console.log('res.userInfo err', err)
-      }
-    })
-  },
-  bindGetUserInfo(e) {
-    console.log(e.detail.userInfo)
-    this.login(e.detail.userInfo)
+
   },
 
   /**
@@ -83,48 +63,21 @@ Page({
   onShareAppMessage() {
 
   },
-  loginEventHandler() {
-    this.login().then(res => {
-      console.log('res#', res)
-    }).catch(err => {
-      console.log('err#', err)
-    })
-  },
-  getPhoneNumber(e) {
-    console.log(e.detail.code)
-  },
-  login(userInfo) {
-    console.log('login called')
-    const that = this;
-    return new Promise((resolve, reject) => {
-      wx.checkSession({
-        success() {
-          // session_key 未过期，并且在本生命周期一直有效；
-          resolve('checkSession ok');
-        },
-        fail() {
-          // session_key 已经失效，需要重新执行登录流程
-          wx.login({
-            success: res => {
-              // 发送res.code到后台换取openId,sessionKey,unionId
-              console.log("res.code#", res.code)
-              wx.request({
-                url: 'http://localhost:1337/magic-link-me/wx-login',
-                method: "post",
-                data: {
-                  code: res.code,
-                  userInfo
-                },
-                success(res) {
-                  console.log('wx.request res', res)
-                  resolve();
-                }
-              })
-
-            }
-          })
-        }
-      })
+  login() {
+    wx.login({
+      success: res => {
+        // 发送res.code到后台换取openId,sessionKey,unionId
+        wx.request({
+          url: 'http://localhost:1337/strapi-wechat-miniprogram-auth/login',
+          method: "post",
+          data: {
+            code: res.code
+          },
+          success(res) {
+            console.log('wx.request res', res)
+          }
+        })
+      }
     })
   }
 

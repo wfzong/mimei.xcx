@@ -14,6 +14,9 @@
     }
   },
   "setting": {
-    "urlCheck": false
-  }
+    "urlCheck": false,
+    "compileHotReLoad": true
+  },
+  "projectname": "mimei.xcx",
+  "libVersion": "2.30.2"
 }
