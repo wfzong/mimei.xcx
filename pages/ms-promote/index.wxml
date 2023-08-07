@@ -1,0 +1,37 @@
+<!--pages/ms-promote/index.wxml-->
+<view class="main">
+  <image class="bg" src="./images/main/bg.png" />
+
+  <view class="top-buttons">
+    <image src="./images/button_group/a.png" mode="widthFix" />
+    <image src="./images/button_group/b.png" mode="widthFix" />
+    <image src="./images/button_group/c.png" mode="widthFix" />
+    <image src="./images/button_group/d.png" mode="widthFix" />
+    <image src="./images/button_group/e.png" mode="widthFix" />
+  </view>
+
+  <view class="content">
+    <view class="inner">
+      <swiper class="swiper-image" current="{{swiperIndex}}" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperChange">
+        <swiper-item>
+          <image class="swiper-item " src="./images/card.png" mode="widthFix" />
+        </swiper-item>
+        <swiper-item>
+          <image class="swiper-item " src="./images/card.png" mode="widthFix" />
+        </swiper-item>
+        <swiper-item>
+          <image class="swiper-item " src="./images/card.png" mode="widthFix" />
+        </swiper-item>
+      </swiper>
+
+      <button bind:tap="changeAdd">+</button>
+      <button bind:tap="changeDee">-</button>
+
+      <swiper current="{{swiperIndex}}">
+        <swiper-item>aaaa </swiper-item>
+        <swiper-item>bbb </swiper-item>
+        <swiper-item>ccc </swiper-item>
+      </swiper>
+    </view>
+  </view>
+</view>
