@@ -174,7 +174,12 @@ page {}
   line-height: 42rpx;
   margin-left: 22rpx;
 }
-
+.content-section .inner .list-item .orange {
+  color: #FC8B00;
+}
+.content-section .inner .list-item .big-text {
+  font-size: 34rpx;
+}
 
 
 .picker {
