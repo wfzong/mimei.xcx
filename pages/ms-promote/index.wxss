@@ -26,7 +26,7 @@
 
 .main .content {
   position: absolute;
-  top: 286rpx;
+  top: 272rpx;
   left: 0;
   right: 0;
   /* background-color: gray; */
@@ -35,23 +35,23 @@
 
 .main .content .inner {
   /* background-color: green; */
-  height: 2000rpx;
+  /* height: 2000rpx; */
 }
 
-.swiper-image {
-  height: 448rpx;
-  background-color: hotpink;
-  width: 400px;
+.top-swiper-section {
+  height: 300rpx;
+  /* background-color: hotpink; */
+  width: 400rpx;
   margin: 0 auto;
   display: flex;
   justify-content: center;
 }
 
-.swiper-image .swiper-item {
+.top-swiper-section .swiper-item {
   /* background-color: green; */
   width: 400rpx;
   /* height: 280rpx; */
-  
+
 }
 
 .wx-swiper-dots {
@@ -65,16 +65,64 @@
 
 /*未选中点的样式*/
 .wx-swiper-dot {
-  width: 10rpx;
-  height: 10rpx;
-  background: red !important;
-  margin-left: -8rpx
+  width: 10rpx !important;
+  height: 10rpx !important;
+  background: white !important;
+  margin-left: -8rpx;
 }
 
 /*激活样式*/
 .wx-swiper-dot-active {
   width: 38rpx !important;
   height: 10rpx;
-  background: green !important;
+  background: white !important;
   border-radius: 10rpx !important
+}
+
+.arrow {
+  width: 12rpx;
+  height: 22rpx;
+  position: absolute;
+  top: 150rpx;
+}
+
+.arrow.left {
+  left: 114rpx;
+}
+
+.arrow.right {
+  right: 114rpx;
+}
+
+
+.content-section {
+  margin-top: 20rpx;
+  /* display: none; */
+}
+
+.content-section .inner {
+  /* background-color: yellow; */
+  margin: 0 68rpx;
+}
+
+.content-section .inner .title-section {
+  border-bottom: 1rpx solid #707070;
+  padding-bottom: 12rpx;
+}
+
+.content-section .inner .title-section text {
+  display: block;
+}
+
+.content-section .inner .title-section .title {
+  font-size: 26rpx;
+  line-height: 42rpx;
+  color: #5A5757;
+  font-family: FZLTCHK--GBK1-0;
+}
+
+.content-section .inner .title-section .quote {
+  font-size: 18rpx;
+  line-height: 32rpx;
+  color: #5A5757;
 }

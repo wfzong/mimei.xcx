@@ -12,7 +12,7 @@
 
   <view class="content">
     <view class="inner">
-      <swiper class="swiper-image" current="{{swiperIndex}}" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperChange">
+      <swiper class="top-swiper-section" current="{{swiperIndex}}" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperChange">
         <swiper-item>
           <image class="swiper-item " src="./images/card.png" mode="widthFix" />
         </swiper-item>
@@ -24,14 +24,36 @@
         </swiper-item>
       </swiper>
 
-      <button bind:tap="changeAdd">+</button>
-      <button bind:tap="changeDee">-</button>
+      <image class="arrow left" bind:tap="changeDee" src="./images/icons/left.png" />
+      <image class="arrow right" bind:tap="changeAdd" src="./images/icons/right.png" />
 
-      <swiper current="{{swiperIndex}}">
-        <swiper-item>aaaa </swiper-item>
-        <swiper-item>bbb </swiper-item>
-        <swiper-item>ccc </swiper-item>
-      </swiper>
+
+      <view class="content-section">
+        <swiper current="{{swiperIndex}}">
+          <swiper-item>
+            <view class="inner">
+              <view class="title-section">
+                <text class="title">民生VISA全币种信用卡</text>
+                <text class="quote">境外外币交易以美元入账，免货币转换费</text>
+              </view>
+            </view>
+          </swiper-item>
+          <swiper-item>
+            <view class="innnnn">
+              <text>aaaa \n aaaaaa \n aaaaaa \n aaaaaa \n aaaaaa \n aa</text>
+              <text>aaaa \n aaaaaa \n aaaaaa \n aaaaaa \n aaaaaa \n aa</text>
+              <text>aaaa \n aaaaaa \n aaaaaa \n aaaaaa \n aaaaaa \n aa</text>
+            </view>
+          </swiper-item>
+          <swiper-item>
+            <view class="innnnn">
+              <text>aaaa \n aaaaaa \n aaaaaa \n aaaaaa \n aaaaaa \n aa</text>
+              <text>aaaa \n aaaaaa \n aaaaaa \n aaaaaa \n aaaaaa \n aa</text>
+            </view>
+          </swiper-item>
+        </swiper>
+      </view>
+
     </view>
   </view>
 </view>
