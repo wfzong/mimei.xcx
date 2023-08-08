@@ -9,10 +9,6 @@
     <image src="./images/button_group/d.png" mode="widthFix" />
     <image src="./images/button_group/e.png" mode="widthFix" />
   </view>
-  <view class="bottom-buttons">
-    <image class="button" src="./images/icons/button_share.png" mode="widthFix" />
-    <image class="button" src="./images/icons/button_gen.png" mode="widthFix" />
-  </view>
 
   <view class="top-swiper-section">
     <swiper class="swiper" current="{{swiperIndex}}" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperChange">
@@ -43,7 +39,7 @@
 
             <view class="list-item">
               <image class="icon" src="./images/icons/sc_a.png" mode="widthFix" />
-              <view class="text">
+              <view class="text small-line">
                 ISA网络境外线上线下累计消费满1000美元以上的超额部分，可享<text class="orange"><text class="big-text">6</text>%返现</text>。
               </view>
             </view>
@@ -71,6 +67,11 @@
       </block>
 
     </swiper>
+  </view>
+  
+  <view class="bottom-buttons">
+    <image class="button" src="./images/icons/button_share.png" mode="widthFix" />
+    <image class="button" src="./images/icons/button_gen.png" mode="widthFix" />
   </view>
 
 </view>
