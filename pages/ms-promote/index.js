@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    cardType: 'cardA',
     itemCount: new Array(4),
     background: ['demo-text-1', 'demo-text-2', 'demo-text-3'],
     indicatorDots: true,
@@ -71,6 +72,16 @@ Page({
    */
   onShareAppMessage() {
 
+  },
+  changeCard(e) {
+    const {
+      target
+    } = e;
+    if (target.dataset.cardtype) {
+      this.setData({
+        cardType: target.dataset.cardtype
+      })
+    }
   },
   swiperChange(event) {
     console.log(event)

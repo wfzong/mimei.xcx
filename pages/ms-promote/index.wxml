@@ -2,12 +2,12 @@
 <view class="main">
   <image class="bg" src="./images/main/bg.png" />
 
-  <view class="top-buttons">
-    <image src="./images/button_group/a.png" mode="widthFix" />
-    <image src="./images/button_group/b.png" mode="widthFix" />
-    <image src="./images/button_group/c.png" mode="widthFix" />
-    <image src="./images/button_group/d.png" mode="widthFix" />
-    <image src="./images/button_group/e.png" mode="widthFix" />
+  <view class="top-buttons" bind:tap="changeCard">
+    <image data-cardType="cardA" src="./images/button_group/{{cardType=='cardA'?'a_over':'a'}}.png" mode="widthFix" />
+    <image data-cardType="cardB" src="./images/button_group/{{cardType=='cardB'?'b_over':'b'}}.png" mode="widthFix" />
+    <image data-cardType="cardC" src="./images/button_group/{{cardType=='cardC'?'c_over':'c'}}.png" mode="widthFix" />
+    <image data-cardType="cardD" src="./images/button_group/{{cardType=='cardD'?'d_over':'d'}}.png" mode="widthFix" />
+    <image data-cardType="cardE" src="./images/button_group/{{cardType=='cardE'?'e_over':'e'}}.png" mode="widthFix" />
   </view>
 
   <view class="top-swiper-section">
@@ -21,7 +21,6 @@
     <image class="arrow left" bind:tap="changeDee" src="./images/icons/left.png" mode="widthFix" />
     <image class="arrow right" bind:tap="changeAdd" src="./images/icons/right.png" mode="widthFix" />
   </view>
-
 
   <view class="content-section">
     <swiper current="{{swiperIndex}}" class="content-swiper" bindchange="swiperChange">
@@ -68,7 +67,7 @@
 
     </swiper>
   </view>
-  
+
   <view class="bottom-buttons">
     <image class="button" src="./images/icons/button_share.png" mode="widthFix" />
     <image class="button" src="./images/icons/button_gen.png" mode="widthFix" />

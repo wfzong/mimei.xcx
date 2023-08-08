@@ -19,6 +19,7 @@ page {}
 .main .top-buttons {
   position: absolute;
   top: 190rpx;
+  z-index: 1;
   width: 100%;
   text-align: center;
 }
