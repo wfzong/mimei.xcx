@@ -1,7 +1,12 @@
 /* pages/ms-promote/index.wxss */
+page {}
+
 .main {
-  background: red;
-  position: relative;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .main .bg {
@@ -18,40 +23,58 @@
   text-align: center;
 }
 
+.main .bottom-buttons {
+  position: absolute;
+  bottom: 0rpx;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  padding: 18rpx 0 56rpx 0;
+}
+
+.main .bottom-buttons .button {
+  width: 266rpx;
+  height: 70rpx;
+  margin: 0 8rpx;
+}
+
 .main .top-buttons image {
   width: 114rpx;
   height: 54rpx;
   margin: 0 5rpx;
 }
 
-.main .content {
-  position: absolute;
-  top: 272rpx;
-  left: 0;
-  right: 0;
-  /* background-color: gray; */
-  z-index: 1;
-}
-
-.main .content .inner {
-  /* background-color: green; */
-  /* height: 2000rpx; */
-}
-
 .top-swiper-section {
-  height: 300rpx;
-  /* background-color: hotpink; */
+  position: relative;
+  padding-top: 260rpx;
+}
+
+.top-swiper-section .swiper {
+  height: 298rpx;
   width: 400rpx;
   margin: 0 auto;
   display: flex;
   justify-content: center;
 }
 
-.top-swiper-section .swiper-item {
-  /* background-color: green; */
-  width: 400rpx;
-  /* height: 280rpx; */
+.arrow {
+  width: 12rpx;
+  height: 22rpx;
+  position: absolute;
+  bottom: 120rpx;
+}
 
+.arrow.left {
+  left: 114rpx;
+}
+
+.arrow.right {
+  right: 114rpx;
+}
+
+.top-swiper-section .swiper-item {
+  width: 400rpx;
 }
 
 .wx-swiper-dots {
@@ -79,25 +102,13 @@
   border-radius: 10rpx !important
 }
 
-.arrow {
-  width: 12rpx;
-  height: 22rpx;
-  position: absolute;
-  top: 150rpx;
-}
-
-.arrow.left {
-  left: 114rpx;
-}
-
-.arrow.right {
-  right: 114rpx;
-}
-
-
 .content-section {
   margin-top: 20rpx;
   /* display: none; */
+}
+
+.content-section .content-swiper {
+  height: 700rpx;
 }
 
 .content-section .inner {
@@ -116,13 +127,71 @@
 
 .content-section .inner .title-section .title {
   font-size: 26rpx;
-  line-height: 42rpx;
+  line-height: 32rpx;
   color: #5A5757;
-  font-family: FZLTCHK--GBK1-0;
 }
 
 .content-section .inner .title-section .quote {
   font-size: 18rpx;
   line-height: 32rpx;
   color: #5A5757;
+}
+
+.content-section .inner .title-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 26rpx 0 12rpx 0;
+}
+
+.content-section .inner .title-list .big {
+  width: 126rpx;
+  height: 44rpx;
+}
+
+.content-section .inner .title-list .sub {
+  width: 148rpx;
+  height: 18rpx;
+}
+
+.content-section .inner .list-item {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1rpx solid #1068B2;
+  border-radius: 12rpx;
+  margin-bottom: 26rpx;
+  padding: 20rpx 28rpx;
+  display: flex;
+  align-items: center;
+}
+
+.content-section .inner .list-item .icon {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.content-section .inner .list-item .text {
+  font-size: 24rpx;
+  line-height: 42rpx;
+  margin-left: 22rpx;
+}
+
+
+
+.picker {
+  border: 2rpx solid #707070;
+  border-radius: 8rpx;
+  padding: 8rpx 26rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.picker .text {
+  font-size: 24rpx;
+  color: #979898;
+}
+
+.picker .image {
+  width: 16rpx;
+  height: 8rpx;
 }

@@ -5,13 +5,16 @@ Page({
    * 页面的初始数据
    */
   data: {
+    itemCount: new Array(4),
     background: ['demo-text-1', 'demo-text-2', 'demo-text-3'],
     indicatorDots: true,
     vertical: false,
     autoplay: false,
     interval: 2000,
     duration: 500,
-    swiperIndex: 1
+    swiperIndex: 0,
+    array: ['金卡', '银卡', '白金卡'],
+    selectedIndex: 0,
   },
 
   /**
@@ -76,13 +79,26 @@ Page({
     })
   },
   changeAdd() {
+    if (this.data.swiperIndex == (this.data.itemCount.length - 1)) {
+      return
+    }
     this.setData({
       swiperIndex: this.data.swiperIndex + 1
     })
   },
   changeDee() {
+    if (this.data.swiperIndex == 0) {
+      return
+    }
     this.setData({
       swiperIndex: this.data.swiperIndex - 1
     })
-  }
+  },
+
+  bindPickerChange: function (e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      index: e.detail.value
+    })
+  },
 })
