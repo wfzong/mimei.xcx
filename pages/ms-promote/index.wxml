@@ -9,64 +9,22 @@
     <image data-cardType="cardD" src="./images/button_group/{{cardType=='cardD'?'d_over':'d'}}.png" mode="widthFix" />
     <image data-cardType="cardE" src="./images/button_group/{{cardType=='cardE'?'e_over':'e'}}.png" mode="widthFix" />
   </view>
+  <block wx:if="{{cardType=='cardA'}}">
+    <CardSection itemCount="{{['','']}}" />
+  </block>
+  <block wx:if="{{cardType=='cardB'}}">
+    <CardSection itemCount="{{['','','']}}" />
+  </block>
+  <block wx:if="{{cardType=='cardC'}}">
+    <CardSection />
+  </block>
+  <block wx:if="{{cardType=='cardD'}}">
+    <CardSection itemCount="{{['','','','','']}}" />
+  </block>
+  <block wx:if="{{cardType=='cardE'}}">
+    <CardSection itemCount="{{['','','','','','']}}" />
+  </block>
 
-  <view class="top-swiper-section">
-    <swiper class="swiper" current="{{swiperIndex}}" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperChange">
-      <block wx:for="{{itemCount}}">
-        <swiper-item>
-          <image class="swiper-item " src="./images/card.png" mode="widthFix" />
-        </swiper-item>
-      </block>
-    </swiper>
-    <image class="arrow left" bind:tap="changeDee" src="./images/icons/left.png" mode="widthFix" />
-    <image class="arrow right" bind:tap="changeAdd" src="./images/icons/right.png" mode="widthFix" />
-  </view>
-
-  <view class="content-section">
-    <swiper current="{{swiperIndex}}" class="content-swiper" bindchange="swiperChange">
-      <block wx:for="{{itemCount}}">
-        <swiper-item>
-          <view class="inner">
-            <view class="title-section">
-              <text class="title">民生VISA全币种信用卡</text>
-              <text class="quote">境外外币交易以美元入账，免货币转换费</text>
-            </view>
-            <view class="title-list">
-              <image class="big" src="./images/title.png" mode="widthFix" />
-              <image class="sub" src="./images/sub_title.png" mode="widthFix" />
-            </view>
-
-            <view class="list-item">
-              <image class="icon" src="./images/icons/sc_a.png" mode="widthFix" />
-              <view class="text small-line">
-                ISA网络境外线上线下累计消费满1000美元以上的超额部分，可享<text class="orange"><text class="big-text">6</text>%返现</text>。
-              </view>
-            </view>
-            <view class="list-item">
-              <image class="icon" src="./images/icons/sc_b.png" mode="widthFix" />
-              <view class="text">
-                全民推荐官渠道新户办理，可享<text class="orange"><text class="big-text">160</text>元微信立减金或三箱伊利金典牛奶</text>。
-              </view>
-            </view>
-            <view class="list-item">
-              <image class="icon" src="./images/icons/sc_c.png" mode="widthFix" />
-              <view class="text">
-                权益文字待更新权益文字待更新，权益文字待更新，权益文字待更新权益文字待更新。
-              </view>
-            </view>
-
-            <picker bindchange="bindPickerChange" value="{{selectedIndex}}" range="{{array}}">
-              <view class="picker">
-                <text class="text">{{array[selectedIndex]}}</text>
-                <image class="image" src="./images/icons/down.png" mode="widthFix" />
-              </view>
-            </picker>
-          </view>
-        </swiper-item>
-      </block>
-
-    </swiper>
-  </view>
 
   <view class="bottom-buttons">
     <image class="button" src="./images/icons/button_share.png" mode="widthFix" />

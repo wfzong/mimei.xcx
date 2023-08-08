@@ -1,4 +1,6 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "CardSection": "./card-section/index"
+  },
   "navigationStyle": "custom"
 }

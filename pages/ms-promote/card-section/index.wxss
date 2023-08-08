@@ -1,1 +1,186 @@
 /* pages/ms-promote/card-section/index.wxss */
+.top-swiper-section {
+  position: relative;
+  padding-top: 286rpx;
+}
+
+.top-swiper-section .swiper {
+  height: 298rpx;
+  width: 400rpx;
+  margin: 0 auto;
+}
+
+.arrow {
+  width: 12rpx;
+  height: 22rpx;
+  position: absolute;
+  bottom: 120rpx;
+}
+
+.arrow.left {
+  left: 114rpx;
+}
+
+.arrow.right {
+  right: 114rpx;
+}
+
+.top-swiper-section .swiper-item {
+  width: 400rpx;
+}
+
+.wx-swiper-dots {
+  position: relative;
+  background: red;
+}
+
+.swiper-dot-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-dot-wrap .swiper-dot {
+  width: 10rpx;
+  height: 10rpx;
+  background: white;
+  border-radius: 50%;
+  text-indent: -100rpx;
+  overflow: hidden;
+  margin-left: 8rpx;
+}
+.swiper-dot-wrap .swiper-dot-activity {
+  width: 38rpx !important;
+  height: 10rpx;
+  background: white !important;
+  border-radius: 10rpx !important
+}
+
+/*水平指示器*/
+.wx-swiper-dots.wx-swiper-dots-horizontal {
+  margin-bottom: -20rpx;
+}
+
+/*未选中点的样式*/
+.wx-swiper-dot {
+  width: 10rpx !important;
+  height: 10rpx !important;
+  background: white !important;
+  margin-left: -8rpx;
+}
+
+/*激活样式*/
+.wx-swiper-dot-active {
+  width: 38rpx !important;
+  height: 10rpx;
+  background: white !important;
+  border-radius: 10rpx !important
+}
+
+
+.content-section {
+  margin-top: 20rpx;
+  /* display: none; */
+}
+
+.content-section .content-swiper {
+  height: 700rpx;
+}
+
+.content-section .inner {
+  /* background-color: yellow; */
+  margin: 0 68rpx;
+}
+
+.content-section .inner .title-section {
+  border-bottom: 1rpx solid #707070;
+  padding-bottom: 12rpx;
+}
+
+
+.content-section .inner .title-section .title {
+  display: block;
+  font-size: 26rpx;
+  line-height: 32rpx;
+  color: #5A5757;
+  font-weight: bold;
+}
+
+.content-section .inner .title-section .quote {
+  display: block;
+  font-size: 18rpx;
+  line-height: 32rpx;
+  color: #5A5757;
+}
+
+.content-section .inner .title-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 26rpx 0 12rpx 0;
+}
+
+.content-section .inner .title-list .big {
+  width: 126rpx;
+  height: 44rpx;
+}
+
+.content-section .inner .title-list .sub {
+  width: 148rpx;
+  height: 18rpx;
+}
+
+.content-section .inner .list-item {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1rpx solid #1068B2;
+  border-radius: 12rpx;
+  margin-bottom: 26rpx;
+  padding: 20rpx 20rpx;
+  display: flex;
+  align-items: center;
+}
+
+.content-section .inner .list-item .icon {
+  width: 160rpx;
+  height: 160rpx;
+}
+
+.content-section .inner .list-item .text {
+  font-size: 24rpx;
+  line-height: 38rpx;
+  margin-left: 22rpx;
+}
+
+.content-section .inner .list-item .text.small-line {
+  line-height: 32rpx;
+}
+
+.content-section .inner .list-item .orange {
+  color: #FC8B00;
+  font-weight: bold;
+}
+
+.content-section .inner .list-item .big-text {
+  font-size: 34rpx;
+}
+
+
+.picker {
+  border: 1rpx solid #707070;
+  border-radius: 8rpx;
+  padding: 8rpx 26rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.picker .text {
+  font-size: 24rpx;
+  color: #979898;
+}
+
+.picker .image {
+  width: 16rpx;
+  height: 8rpx;
+}
