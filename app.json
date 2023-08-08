@@ -4,7 +4,8 @@
     "pages/list/index",
     "pages/details/index",
     "pages/materials/index",
-    "pages/account/index"
+    "pages/account/index",
+    "pages/ms-promote/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

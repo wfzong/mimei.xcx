@@ -1,0 +1,80 @@
+/* pages/ms-promote/index.wxss */
+.main {
+  background: red;
+  position: relative;
+}
+
+.main .bg {
+  position: fixed;
+  width: 750rpx;
+  height: 1334rpx;
+  z-index: 0;
+}
+
+.main .top-buttons {
+  position: absolute;
+  top: 190rpx;
+  width: 100%;
+  text-align: center;
+}
+
+.main .top-buttons image {
+  width: 114rpx;
+  height: 54rpx;
+  margin: 0 5rpx;
+}
+
+.main .content {
+  position: absolute;
+  top: 286rpx;
+  left: 0;
+  right: 0;
+  /* background-color: gray; */
+  z-index: 1;
+}
+
+.main .content .inner {
+  /* background-color: green; */
+  height: 2000rpx;
+}
+
+.swiper-image {
+  height: 448rpx;
+  background-color: hotpink;
+  width: 400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-image .swiper-item {
+  /* background-color: green; */
+  width: 400rpx;
+  /* height: 280rpx; */
+  
+}
+
+.wx-swiper-dots {
+  position: relative
+}
+
+/*水平指示器*/
+.wx-swiper-dots.wx-swiper-dots-horizontal {
+  margin-bottom: -20rpx
+}
+
+/*未选中点的样式*/
+.wx-swiper-dot {
+  width: 10rpx;
+  height: 10rpx;
+  background: red !important;
+  margin-left: -8rpx
+}
+
+/*激活样式*/
+.wx-swiper-dot-active {
+  width: 38rpx !important;
+  height: 10rpx;
+  background: green !important;
+  border-radius: 10rpx !important
+}

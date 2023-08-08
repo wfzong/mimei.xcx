@@ -5,6 +5,13 @@
       "list": [
         {
           "name": "",
+          "pathName": "pages/ms-promote/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
           "pathName": "pages/account/index",
           "query": "",
           "launchMode": "default",
