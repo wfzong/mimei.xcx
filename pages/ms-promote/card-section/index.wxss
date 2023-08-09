@@ -127,8 +127,8 @@
 }
 
 .content-section .inner .title-list .sub {
-  width: 148rpx;
-  height: 18rpx;
+  width: 170rpx;
+  height: 20rpx;
 }
 
 .content-section .inner .list-item {
