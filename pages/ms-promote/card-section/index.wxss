@@ -142,14 +142,15 @@
 }
 
 .content-section .inner .list-item .icon {
-  width: 160rpx;
-  height: 160rpx;
+  width: 80rpx;
+  height: 80rpx;
 }
 
 .content-section .inner .list-item .text {
   font-size: 24rpx;
   line-height: 38rpx;
   margin-left: 22rpx;
+  flex: 1;
 }
 
 .content-section .inner .list-item .text.small-line {
