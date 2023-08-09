@@ -1,0 +1,4 @@
+一、此目前放置在  /pages/ 目录下
+
+二、在 app.json pages 数组下新增一行数据："pages/ms-promote/index"
+
