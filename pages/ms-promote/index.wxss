@@ -22,6 +22,7 @@
   width: 100%;
   text-align: center;
 }
+
 .main .top-buttons image {
   width: 114rpx;
   height: 54rpx;
@@ -32,15 +33,13 @@
   text-align: center;
   background-color: white;
   position: relative;
-  padding-top: 32rpx;
+  padding-top: 42rpx;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 68rpx;
 }
 
 .main .bottom-buttons .button {
-  width: 266rpx;
+  width: 296rpx;
   height: 70rpx;
-  margin: 0 8rpx;
 }
-
-
-
-
