@@ -5,7 +5,7 @@
     <view data-to="/pages/materials/index?type=contact" bind:tap="linkTo">联系我们</view>
   </view>
   <view class='copyright'>
-    <text>© 流水清清 2018</text>
+    <text>© 流水清清 2023</text>
     <image data-to="/pages/index/index" data-navtype="reLaunch" bind:tap="linkTo" src='http://static.fuzong.wang/FoQ3g7F4oseaANPLj2zHkNzpMqAi'></image>
   </view>
 </view>
